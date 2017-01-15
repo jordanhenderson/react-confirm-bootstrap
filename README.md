@@ -51,6 +51,9 @@ Text for the confirm button in the modal.
 #### onConfirm: React.PropTypes.func.isRequired
 Function to be called once confirmed.
 
+#### onClose: React.PropTypes.func
+Function to be called once closed. 
+
 #### title: React.PropTypes.node.isRequired
 Title text for the modal
 

@@ -9,6 +9,7 @@ var Confirm = React.createClass({
         confirmBSStyle: React.PropTypes.string,
         confirmText: React.PropTypes.node,
         onConfirm: React.PropTypes.func.isRequired,
+        onClose: React.PropTypes.func,
         showCancelButton: React.PropTypes.bool.isRequired,
         title: React.PropTypes.node.isRequired,
         visible: React.PropTypes.bool,
@@ -45,6 +46,8 @@ var Confirm = React.createClass({
         this.setState({
             isOpened: false,
         });
+
+        this.props.onClose();
     },
 
     onConfim() {
