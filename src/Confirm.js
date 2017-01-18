@@ -47,7 +47,10 @@ var Confirm = React.createClass({
             isOpened: false,
         });
 
-        this.props.onClose();
+        const { onClose } = this.props;
+        if (typeof onClose === "function") {
+            onClose();
+        }
     },
 
     onConfim() {
