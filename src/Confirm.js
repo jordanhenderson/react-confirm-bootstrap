@@ -84,7 +84,7 @@ Confirm.propTypes = {
     confirmBSStyle: PropTypes.string,
     confirmText: PropTypes.node,
     onConfirm: PropTypes.func.isRequired,
-    onClose: React.PropTypes.func,
+    onClose: PropTypes.func,
     showCancelButton: PropTypes.bool.isRequired,
     title: PropTypes.node.isRequired,
     visible: PropTypes.bool
